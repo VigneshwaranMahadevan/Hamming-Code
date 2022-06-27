@@ -48,7 +48,7 @@ for blockIndex in range(len(inputString)//10):
         asciiVal=0
         for charIdx in range(len(data8Bit)):
             if(data8Bit[7-charIdx]=="1"):
-                asciiVal+=2**(j) #finding the ASCII value of the 8 bits
+                asciiVal+=2**(charIdx) #finding the ASCII value of the 8 bits
         blockAnswer+=chr(asciiVal) #Appending the ASCII character
 
     answer+=blockAnswer #Append block answer to final Answer
